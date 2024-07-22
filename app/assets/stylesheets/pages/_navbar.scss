@@ -1,0 +1,29 @@
+.navbar {
+  background: rgb(245, 243, 243);
+  height: 100px;
+  line-height: 100px;
+}
+
+#logo {
+  border-radius: 4px;
+  max-height: 50px;
+  margin-left: 20px;
+}
+
+.button {
+  color: black;
+  border: 1px solid #4A4A4A;
+  padding: 8px 20px;
+  border-radius: 50px;
+  opacity: 0.8;
+  max-height: 50px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  opacity: 1;
+  border: 1px solid #4A4A4A;
+}
