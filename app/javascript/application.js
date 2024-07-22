@@ -3,3 +3,11 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "@popperjs/core"
 import "bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Bootstrap requires jQuery to be available globally
+  window.$ = $;
+  window.jQuery = $;
+});
