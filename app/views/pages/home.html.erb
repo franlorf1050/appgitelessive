@@ -1,13 +1,29 @@
 <div class="maincontainer">
-
   <div class="background-container">
-
     <div class="overlay d-flex flex-column align-items-center justify-content-center text-center">
-      <h1>Welcome to En Face du Vieux Lessive</h1>
       <div>
-        <a href="" class="button">Réservation</a>
+        <%= link_to 'Réservation', booking_path, class: 'button-home' %>
+      </div>
+      <div>
+        <h1 class="title">En Face Du Vieux Lessive</h1>
+        <h6 class="subtitle">
+          C’est au cœur du village que notre Guesthouse vous accueille pour un séjour où le temps s’écoule au fil de la Lesse et du clocher de l’église. Vous y trouverez la recette pour un moment de détente et de sérénité.
+        </h6>
       </div>
     </div>
   </div>
-
+  <div class="cards-container">
+    <div class="cards-grid mb-5 mt-5">
+      <h4>Le Gîte</h4>
+      <%= link_to 'Voir plus', about_path, class: 'button' %>
+    </div>
+    <div class="cards-grid mb-5 mt-5">
+      <h4>Activités</h4>
+      <%= link_to 'Voir plus', activity_path, class: 'button' %>
+    </div>
+    <div class="cards-grid mb-5 mt-5">
+      <h4>Tarifs et Réservation</h4>
+      <%= link_to 'Voir plus', booking_path, class: 'button' %>
+    </div>
+  </div>
 </div>

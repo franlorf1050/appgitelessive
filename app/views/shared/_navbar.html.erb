@@ -5,6 +5,16 @@
     <% end %>
   </div>
   <div class="d-flex align-items-center">
-    <button class="button">Login</button>
+    <!-- Menu déroulant -->
+    <div class="dropdown">
+      <button class="button">Menu</button>
+      <div class="dropdown-content">
+        <%= link_to 'Le Gîte', about_path, class: 'dropdown-item' %>
+        <%= link_to 'Activités', activity_path, class: 'dropdown-item' %>
+        <%= link_to 'Réservation', booking_path, class: 'dropdown-item' %>
+      </div>
+    </div>
+    <!-- Bouton Login -->
+    <button class="button ml-3">Login</button>
   </div>
 </div>

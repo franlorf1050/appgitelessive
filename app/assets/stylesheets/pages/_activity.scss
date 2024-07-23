@@ -1,0 +1,69 @@
+.container-activity {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 35px;
+  background: none; /* Enlève toute couleur de fond */
+  border: none; /* Enlève toute bordure */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.cards-activity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+  padding: 10px 16px;
+  box-shadow: none; /* Supprime l'ombre du conteneur */
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-link {
+  display: block; /* Assurez-vous que le lien couvre tout le contenu de la carte */
+  text-decoration: none; /* Enlevez la décoration par défaut du lien */
+}
+
+.card-link:hover .card-img {
+  opacity: 0.8; /* Exemple d'effet au survol, vous pouvez ajuster selon vos préférences */
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.card-text p {
+  font-size: 12px;
+  opacity: 0.6;
+  margin: 0;
+  text-align: left;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
