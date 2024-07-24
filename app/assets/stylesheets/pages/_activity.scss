@@ -1,32 +1,154 @@
+// .container-activity {
+//   width: 100%;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 0 15px;
+//   margin-bottom: 35px;
+//   background: none; /* Enlève toute couleur de fond */
+//   border: none; /* Enlève toute bordure */
+// }
+
+// .title {
+//   text-align: center;
+//   margin-bottom: 25px;
+//   margin-top: 15px;
+// }
+
+// .title h1 {
+//   margin-top: 35px;
+// }
+
+// .title-left {
+//   text-align: left;
+//   margin-bottom: 15px;
+//   margin-top: 15px;
+//   padding-left: 16px; /* Ajoute un peu de padding pour aligner avec les cards */
+// }
+
+// .title-left h2 {
+// font-family: "Nunito", "Helvetica", "sans-serif";
+// }
+
+// .cards-activity {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   grid-gap: 24px;
+//   padding: 10px 16px;
+//   box-shadow: none; /* Supprime l'ombre du conteneur */
+// }
+
+// .card {
+//   background: white;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   border-radius: 8px;
+//   overflow: hidden;
+//   height: 300px;
+// }
+
+// .card-img {
+//   width: 100%;
+//   height: 200px;
+//   overflow: hidden;
+// }
+
+// .card-img img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// .card-link {
+//   display: block; /* Assurez-vous que le lien couvre tout le contenu de la carte */
+//   text-decoration: none; /* Enlevez la décoration par défaut du lien */
+// }
+
+// .card-link:hover .card-img {
+//   opacity: 0.8; /* Exemple d'effet au survol, vous pouvez ajuster selon vos préférences */
+// }
+
+// .card-text h3 {
+//   font-size: 16px;
+//   font-weight: bold;
+//   margin: 0 0 10px 0;
+//   text-align: left;
+//   margin-top: 12px;
+//   margin-left: 12px;
+//   margin-right: 12px;
+//   height: 25px;
+// }
+
+// .card-text p {
+//   font-size: 12px;
+//   opacity: 0.6;
+//   margin: 0;
+//   text-align: left;
+//   margin-left: 12px;
+//   margin-bottom: 12px;
+//   margin-right: 12px;
+// }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url('home.jpg') no-repeat center center fixed; /* Remplacez par le chemin de votre image */
+  background-size: cover;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
 .container-activity {
+  flex: 1; /* Prend l'espace disponible entre la navbar et le footer */
+  position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  margin-bottom: 35px;
-  background: none; /* Enlève toute couleur de fond */
   border: none; /* Enlève toute bordure */
+  box-shadow: none; /* Supprime l'ombre du conteneur */
+  background: rgba(255, 255, 255, 0.5)
 }
 
-.title {
+.title-activity {
   text-align: center;
   margin-bottom: 25px;
-  margin-top: 15px;
+  margin-top: 20px; /* Ajoute une marge supérieure entre la navbar et le titre */
+  color:  #333; /* Texte plus foncé pour le contraste */
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.title-left {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 0; /* Enlève la marge supérieure */
+  padding-left: 16px; /* Ajoute un peu de padding pour aligner avec les cards */
+  color: #333; /* Texte plus foncé pour le contraste */
 }
 
 .cards-activity {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 24px;
   padding: 10px 16px;
   box-shadow: none; /* Supprime l'ombre du conteneur */
 }
 
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contraste */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  height: 300px;
 }
 
 .card-img {
@@ -57,13 +179,23 @@
   text-align: left;
   margin-top: 12px;
   margin-left: 12px;
+  margin-right: 12px;
+  height: 25px;
+  color: #333; /* Texte plus foncé pour le contraste */
 }
 
 .card-text p {
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.8;
   margin: 0;
   text-align: left;
   margin-left: 12px;
   margin-bottom: 12px;
+  margin-right: 12px;
+  color: #333; /* Texte plus foncé pour le contraste */
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
 }

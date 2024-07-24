@@ -1,49 +1,135 @@
 <div class="container-activity">
-  <div class="title">
-    <h1><strong>Nos Activités dans la région</strong></h1>
+  <div class="title-activity">
+    <h1><strong>Activités dans la région</strong></h1>
+  </div>
+
+  <!-- Bloc Sports et loisirs -->
+  <div class="title-left">
+    <h2>Sports et loisirs</h2>
   </div>
   <div class="cards-activity">
     <a href="https://www.dinant-evasion.be/fr/kayak-sur-la-lesse" target="_blank" class="card-link">
       <div class="card">
         <div class="card-img">
-          <%= image_tag 'sauna.jpg', alt: 'sauna'%>
+          <%= image_tag 'lesse.jpg', alt: 'lesse'%>
         </div>
         <div class="card-text">
           <h3>Descente de la lesse</h3>
-          <p>Deux parcours surpenant dans une nature sauvage</p>
+          <p>Deux parcours surprenant dans une nature sauvage</p>
         </div>
       </div>
     </a>
-    <a href="https://www.dinant-evasion.be/fr/kayak-sur-la-lesse" target="_blank" class="card-link">
+    <div class="card">
+      <div class="card-img">
+        <%= image_tag 'golf.jpg', alt: 'golf'%>
+      </div>
+      <div class="card-text">
+        <h3>Golf</h3>
+        <p>4 parcours à moins de 45 minutes</p>
+        <%# https://www.golfderougemont.be/ %>
+        <%# https://www.golfdurbuy.be/fr/five-nations-golf-club %>
+        <%# https://rgccra.be/ %>
+      </div>
+    </div>
+    <a href="https://www.visorando.com/randonnee-rochefort-belgique.html" target="_blank" class="card-link">
       <div class="card">
         <div class="card-img">
-          <%= image_tag 'sauna.jpg', alt: 'sauna'%>
+          <%= image_tag 'randonnee.jpg', alt: 'randonnee'%>
         </div>
         <div class="card-text">
-          <h3>Descente de la lesse</h3>
-          <p>Deux parcours surpenant dans une nature sauvage</p>
+          <h3>Randonnées</h3>
+          <p>Profitez pleinement de la nature en Famenne</p>
         </div>
       </div>
     </a>
-    <a href="https://www.dinant-evasion.be/fr/kayak-sur-la-lesse" target="_blank" class="card-link">
+    <a href="https://www.fhpsbl.be/societe/asbl-comite-royal-de-lamicale-des-pecheurs-de-la-lomme-et-de-la-lesse/" target="_blank" class="card-link">
       <div class="card">
         <div class="card-img">
-          <%= image_tag 'sauna.jpg', alt: 'sauna'%>
+          <%= image_tag 'peche.jpg', alt: 'peche'%>
         </div>
         <div class="card-text">
-          <h3>Descente de la lesse</h3>
-          <p>Deux parcours surpenant dans une nature sauvage</p>
+          <h3>Pêche dans la Lesse</h3>
+          <p>Découvrez la pêche à la truite. Profitez du calme et du charme de la Lesse</p>
         </div>
       </div>
     </a>
-    <a href="https://www.dinant-evasion.be/fr/kayak-sur-la-lesse" target="_blank" class="card-link">
+  </div>
+
+  <!-- Bloc Culturelles -->
+  <div class="title-left mt-5">
+    <h2>Culturelles</h2>
+  </div>
+  <div class="cards-activity">
+    <a href="https://grotte-de-han.be/" target="_blank" class="card-link">
       <div class="card">
         <div class="card-img">
-          <%= image_tag 'sauna.jpg', alt: 'sauna'%>
+          <%= image_tag 'grottes.jpg', alt: 'grottes'%>
         </div>
         <div class="card-text">
-          <h3>Descente de la lesse</h3>
-          <p>Deux parcours surpenant dans une nature sauvage</p>
+          <h3>Les grottes de Han</h3>
+          <p>Découvrez une des plus belles grottes d'Europe et un parc animalier en pleine nature</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://chateau-lavaux.com/" target="_blank" class="card-link">
+      <div class="card">
+        <div class="card-img">
+          <%= image_tag 'chateau.jpg', alt: 'chateau'%>
+        </div>
+        <div class="card-text">
+          <h3>Chateau de Lavaux-Ste-Anne</h3>
+          <p>Découvrez le chateau et ses évènements à 5 kilomètres du gîte</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.rochefort.be/loisirs/tourisme/plein-air/Promenades" target="_blank" class="card-link">
+      <div class="card">
+        <div class="card-img">
+          <%= image_tag 'rochefort.jpg', alt: 'rochefort'%>
+        </div>
+        <div class="card-text">
+          <h3>Rochefort</h3>
+          <p>Retrouvez toutes les informations sur le site de la ville de rochefort: ravel (vélo), balade(sentier), la ville, ...</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.redu-villagedulivre.be" target="_blank" class="card-link">
+      <div class="card">
+        <div class="card-img">
+          <%= image_tag 'redu.jpg', alt: 'redu'%>
+        </div>
+        <div class="card-text">
+          <h3>Redu</h3>
+          <p>Partez à la découverte d'un des plus beaux village de Wallonie! Le village du LIVRE</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Bloc Restaurants -->
+  <div class="title-left mt-5">
+    <h2>Pour les gourmands...</h2>
+  </div>
+  <div class="cards-activity">
+    <a href="" target="_blank" class="card-link">
+      <div class="card">
+        <div class="card-img">
+          <%= image_tag 'restaurant.jpg', alt: 'restaurant'%>
+        </div>
+        <div class="card-text">
+          <h3>Restaurants</h3>
+          <p>Trouvez quelques adresses à proximité du Gîte</p>
+          <%# https://wallux.com/lincontournable-rochefort <% cuisine francaise> %>
+          <%# https://www.othentique.be/   <% terroire> %>
+          <%# https://www.chateaudevignee.be/ <% 1 etoile *> %>
+          <%# https://www.lespiedsdansleplat.be/  <% 1 etoile *> %>
+          <%# https://www.la-gourmandise.be/   <% terroire> %>
+          <%# https://www.daverdisse.com/  <% gastro > %>
+          <%# https://www.maximecollard.be/  les terrasses de l'our - tradi %>
+          <%# https://www.maximecollard.be/ 2 etoiles ** %>
+          <%# https://latabledemanon.com/   1 etoile * %>
+          <%# https://bistrotblaise.be/  <% cuisine francaise>  %>
+          <%# https://www.quartier-latin.be/fr/le-restaurant-brasserie-du-quartier-latin  <% restaurant-brasserie>    %>
         </div>
       </div>
     </a>
