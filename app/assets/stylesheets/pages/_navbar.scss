@@ -16,10 +16,11 @@
       min-width: 160px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       z-index: 1;
+      border-radius: 4px;
 
       .dropdown-item {
         color: black;
-        padding: 4px 8px;
+        padding: 0px 8px;
         text-decoration: none;
         display: block;
         text-align: left;

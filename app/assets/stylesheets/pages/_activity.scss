@@ -107,13 +107,27 @@ body {
 .container-activity {
   flex: 1; /* Prend l'espace disponible entre la navbar et le footer */
   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%; /* Prend toute la largeur */
+  margin: 0; /* Supprime les marges automatiques */
+  padding: 0 15px; /* Vous pouvez ajuster les paddings si nécessaire */
   border: none; /* Enlève toute bordure */
   box-shadow: none; /* Supprime l'ombre du conteneur */
-  background: rgba(255, 255, 255, 0.5)
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.cards-activity-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cards-activity {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  padding: 10px 16px;
+  max-width: 1200px; /* Fixez la largeur maximale pour centrer les cartes */
+  width: 100%; /* Assurez-vous que les cartes prennent toute la largeur disponible */
+  box-shadow: none; /* Supprime l'ombre du conteneur */
 }
 
 .title-activity {
@@ -135,14 +149,6 @@ h2 {
   color: #333; /* Texte plus foncé pour le contraste */
 }
 
-.cards-activity {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 24px;
-  padding: 10px 16px;
-  box-shadow: none; /* Supprime l'ombre du conteneur */
-}
-
 .card {
   background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contraste */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -153,7 +159,7 @@ h2 {
 
 .card-img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   overflow: hidden;
 }
 

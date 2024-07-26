@@ -1,0 +1,91 @@
+.cards-activity.dimmed {
+  opacity: 0.3; /* Ajustez l'opacité selon vos besoins */
+  transition: opacity 0.3s ease;
+}
+
+.cards-grid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+  height: auto;
+  z-index: 1000; /* Assurez-vous que cette div est au-dessus des autres éléments */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: white; /* Fond blanc */
+  border: 1px solid rgb(14, 14, 13); /* Bordure noire */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+  opacity: 1; /* Assurez-vous que cette div soit complètement opaque */
+}
+
+.golf-links-container {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  display: flex; /* Utilisez Flexbox */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centre les éléments en hauteur */
+  margin-top: 10px;
+}
+
+.golf-links-container a {
+  text-decoration: none; /* Lien pas souligné */
+  font-family: "Nunito", "Helvetica", "sans-serif"; /* Change la police */
+  display: block;
+  margin-bottom: 10px; /* Espace entre chaque lien */
+  color: black; /* Couleur du lien */
+  transition: all 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.golf-links-container a:hover {
+  font-weight: bold; /* Texte en gras au survol */
+  font-size: 1.1em; /* Augmente légèrement la taille du texte au survol */
+}
+
+.btn-close {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn-close:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.highlighted-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Ajustez la largeur selon vos besoins */
+  height: 250px;
+  background: white; /* Fond blanc */
+  border: 1px solid rgb(14, 14, 13); /* Bordure noire */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+  padding: 10px; /* Ajoute du padding pour l'espacement intérieur */
+  border-radius: 8px; /* Bordure arrondie pour un look cohérent */
+  z-index: 1000; /* Assurez-vous que cet élément est au-dessus de tout le reste */
+  opacity: 1; /* Assurez-vous que cette div soit complètement opaque */
+  text-decoration: none; /* Le texte ne doit pas être souligné */
+}
