@@ -14,38 +14,42 @@ const setupModalLinks = (modalLinkId, gridId, closeButtonId, linksContainerClass
   const cardsGrid = document.getElementById(gridId);
   const cardsActivityElements = document.querySelectorAll(".cards-activity");
 
-  modalLink.addEventListener('click', (event) => {
-    event.preventDefault(); // Empêche le comportement par défaut du lien
-    console.log(event);
-    console.log(event.currentTarget);
+  if (modalLink && closeButton && cardsGrid) {
+    modalLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Empêche le comportement par défaut du lien
+      console.log(event);
+      console.log(event.currentTarget);
 
-    // Basculer la visibilité de la div et l'opacité de .cards-activity
-    if (cardsGrid.style.display === "none" || cardsGrid.style.display === "") {
-      cardsGrid.style.display = "flex"; // Utilisez flex pour centrer les éléments
-      cardsActivityElements.forEach(element => element.classList.add('dimmed'));
+      // Basculer la visibilité de la div et l'opacité de .cards-activity
+      if (cardsGrid.style.display === "none" || cardsGrid.style.display === "") {
+        cardsGrid.style.display = "flex"; // Utilisez flex pour centrer les éléments
+        cardsActivityElements.forEach(element => element.classList.add('dimmed'));
 
-      // Vérifiez si le conteneur de liens existe déjà
-      let linksContainer = cardsGrid.querySelector(linksContainerClass);
+        // Vérifiez si le conteneur de liens existe déjà
+        let linksContainer = cardsGrid.querySelector(linksContainerClass);
 
-      // Vider le conteneur de liens avant d'ajouter de nouveaux liens
-      linksContainer.innerHTML = '';
+        // Vider le conteneur de liens avant d'ajouter de nouveaux liens
+        linksContainer.innerHTML = '';
 
-      // Ajoutez les nouveaux liens dans le conteneur
-      links.forEach(link => {
-        linksContainer.insertAdjacentHTML("beforeend", `<a data-link href="${link.url}" target="_blank">${link.text}</a>`);
-      });
-    } else {
+        // Ajoutez les nouveaux liens dans le conteneur
+        links.forEach(link => {
+          linksContainer.insertAdjacentHTML("beforeend", `<a data-link href="${link.url}" target="_blank">${link.text}</a>`);
+        });
+      } else {
+        cardsGrid.style.display = "none";
+        cardsActivityElements.forEach(element => element.classList.remove('dimmed'));
+      }
+    });
+
+    // Ajoutez un événement de clic au bouton "btn-close"
+    closeButton.addEventListener('click', (event) => {
+      event.preventDefault();
       cardsGrid.style.display = "none";
       cardsActivityElements.forEach(element => element.classList.remove('dimmed'));
-    }
-  });
-
-  // Ajoutez un événement de clic au bouton "btn-close"
-  closeButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    cardsGrid.style.display = "none";
-    cardsActivityElements.forEach(element => element.classList.remove('dimmed'));
-  });
+    });
+  } else {
+    console.error(`Element not found: ${modalLinkId}, ${gridId}, or ${closeButtonId}`);
+  }
 };
 
 // Liens de golf
