@@ -12,7 +12,7 @@ const setupModalLinks = (modalLinkId, gridId, closeButtonId, linksContainerClass
   const modalLink = document.getElementById(modalLinkId);
   const closeButton = document.getElementById(closeButtonId);
   const cardsGrid = document.getElementById(gridId);
-  const cardsActivity = document.querySelector(".cards-activity");
+  const cardsActivityElements = document.querySelectorAll(".cards-activity");
 
   modalLink.addEventListener('click', (event) => {
     event.preventDefault(); // Empêche le comportement par défaut du lien
@@ -22,7 +22,7 @@ const setupModalLinks = (modalLinkId, gridId, closeButtonId, linksContainerClass
     // Basculer la visibilité de la div et l'opacité de .cards-activity
     if (cardsGrid.style.display === "none" || cardsGrid.style.display === "") {
       cardsGrid.style.display = "flex"; // Utilisez flex pour centrer les éléments
-      cardsActivity.classList.add('dimmed');
+      cardsActivityElements.forEach(element => element.classList.add('dimmed'));
 
       // Vérifiez si le conteneur de liens existe déjà
       let linksContainer = cardsGrid.querySelector(linksContainerClass);
@@ -36,7 +36,7 @@ const setupModalLinks = (modalLinkId, gridId, closeButtonId, linksContainerClass
       });
     } else {
       cardsGrid.style.display = "none";
-      cardsActivity.classList.remove('dimmed');
+      cardsActivityElements.forEach(element => element.classList.remove('dimmed'));
     }
   });
 
@@ -44,7 +44,7 @@ const setupModalLinks = (modalLinkId, gridId, closeButtonId, linksContainerClass
   closeButton.addEventListener('click', (event) => {
     event.preventDefault();
     cardsGrid.style.display = "none";
-    cardsActivity.classList.remove('dimmed');
+    cardsActivityElements.forEach(element => element.classList.remove('dimmed'));
   });
 };
 

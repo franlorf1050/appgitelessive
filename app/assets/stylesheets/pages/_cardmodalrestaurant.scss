@@ -3,12 +3,12 @@
   transition: opacity 0.3s ease;
 }
 
-.cards-grid {
+.cards-grid-restaurant {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px; /* Ajustez la largeur selon vos besoins */
+  width: 220px; /* Ajustez la largeur selon vos besoins */
   height: auto;
   z-index: 1000; /* Assurez-vous que cette div est au-dessus des autres éléments */
   display: flex;
@@ -73,13 +73,13 @@
   border: 1px solid black;
 }
 
-.highlighted-div {
+.highlighted-restaurant-div {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px; /* Ajustez la largeur selon vos besoins */
-  height: 600px;
+  width: 550px; /* Ajustez la largeur selon vos besoins */
+  height: 500px;
   background: white; /* Fond blanc */
   border: 1px solid rgb(14, 14, 13); /* Bordure noire */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */

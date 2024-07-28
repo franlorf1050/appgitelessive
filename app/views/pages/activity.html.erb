@@ -1,14 +1,12 @@
 <div class="container-activity">
-  <div class="title-activity">
+  <div class="title-activity mt-5">
     <h1><strong>Activités dans la région</strong></h1>
   </div>
 
   <!-- Bloc Sports et loisirs -->
-  <div class="title-left">
-    <h2>Sports et loisirs</h2>
-  </div>
+  <h2 class="title-cards-activity-bloc mt-5">Sports et loisirs</h2>
   <div class="cards-activity-container">
-    <div class="cards-activity">
+    <div class="cards-activity mt-3">
       <a href="https://www.dinant-evasion.be/fr/kayak-sur-la-lesse" target="_blank" class="card-link">
         <div class="card">
           <div class="card-img">
@@ -57,11 +55,9 @@
   </div>
 
   <!-- Bloc Culture -->
-  <div class="title-left mt-5">
-    <h2>Culture</h2>
-  </div>
+  <h2 class="title-cards-activity-bloc mt-5">Culture</h2>
   <div class="cards-activity-container">
-    <div class="cards-activity">
+    <div class="cards-activity mt-3">
       <a href="https://grotte-de-han.be/" target="_blank" class="card-link">
         <div class="card">
           <div class="card-img">
@@ -110,13 +106,11 @@
   </div>
 
   <!-- Bloc Restaurants -->
-  <div class="title-left mt-5">
-    <h2>Pour les gourmands...</h2>
-  </div>
+  <h2 class="title-cards-activity-bloc mt-5">Pour les gourmands...</h2>
   <div class="cards-activity-container">
-    <div class="cards-activity">
+    <div class="cards-activity mt-3">
       <a href="#" id="modal-link-restaurants" class="card-link">
-        <div class="card">
+        <div class="card mb-5">
           <div class="card-img">
             <%= image_tag 'restaurant.jpg', alt: 'restaurant'%>
           </div>
@@ -130,7 +124,7 @@
   </div>
 
   <!-- Div mise en évidence pour le golf -->
-  <div class="cards-grid mb-5 mt-5 highlighted-div" id="golf-grid" style="display: none;">
+  <div class="cards-grid-golf mb-5 mt-5 highlighted-golf-div" id="golf-grid" style="display: none;">
     <button id="btn-close-golf" class="btn-close"></button>
     <div class="golf-links-container">
       <!-- Les liens seront ajoutés ici via JavaScript -->
@@ -138,7 +132,7 @@
   </div>
 
   <!-- Div mise en évidence pour les restaurants -->
-  <div class="cards-grid mb-5 mt-5 highlighted-div" id="restaurants-grid" style="display: none;">
+  <div class="cards-grid-restaurant mb-5 mt-5 highlighted-restaurant-div" id="restaurants-grid" style="display: none;">
     <button id="btn-close-restaurants" class="btn-close"></button>
     <div class="restaurant-links-container">
       <!-- Les liens seront ajoutés ici via JavaScript -->

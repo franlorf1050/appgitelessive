@@ -120,6 +120,16 @@ body {
   justify-content: center;
 }
 
+h2 {
+  font-weight: bold;
+}
+
+.title-cards-activity-bloc {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
 .cards-activity {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,10 +145,6 @@ body {
   margin-bottom: 25px;
   margin-top: 20px; /* Ajoute une marge supérieure entre la navbar et le titre */
   color:  #333; /* Texte plus foncé pour le contraste */
-}
-
-h2 {
-  font-weight: bold;
 }
 
 .title-left {

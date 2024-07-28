@@ -3,7 +3,7 @@
   transition: opacity 0.3s ease;
 }
 
-.cards-grid {
+.cards-grid-golf {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -34,6 +34,7 @@
   align-items: center;
   justify-content: center; /* Centre les éléments en hauteur */
   margin-top: 10px;
+  height: 290px
 }
 
 .golf-links-container a {
@@ -73,13 +74,13 @@
   border: 1px solid black;
 }
 
-.highlighted-div {
+.highlighted-golf-div {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* Ajustez la largeur selon vos besoins */
-  height: 250px;
+  width: 320px; /* Ajustez la largeur selon vos besoins */
+  height: 280px;
   background: white; /* Fond blanc */
   border: 1px solid rgb(14, 14, 13); /* Bordure noire */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
