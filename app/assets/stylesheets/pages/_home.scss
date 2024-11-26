@@ -101,3 +101,21 @@
     padding: 6px 12px;
   }
 }
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr)); /* 5 icônes par ligne */
+  gap: 20px; /* Espace entre les icônes */
+  max-width: 80%; /* Limiter la largeur à 80% de la page */
+  margin: 0 auto; /* Centrer horizontalement la grille d'icônes */
+  padding-top: 20px; /* Espace au-dessus des icônes */
+}
+
+.icons-container i {
+  font-size: 50px; /* Taille des icônes */
+  color: #fff; /* Couleur des icônes */
+  background-color: #333; /* Exemple de fond derrière les icônes */
+  padding: 20px; /* Espace autour des icônes */
+  border-radius: 10px; /* Bordures arrondies */
+  margin-bottom: 15px;
+}
